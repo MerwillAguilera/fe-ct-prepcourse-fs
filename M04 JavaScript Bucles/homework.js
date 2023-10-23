@@ -7,11 +7,9 @@ function obtenerMayor(x, y) {
    // Tu código:
    if (x > y){
       return x
-    }
-    else if (x < y){
+    }else if (x < y){
       return y
-    }
-   else {
+    }else {
       return x
    }
 
@@ -171,18 +169,11 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if (num <= 1){
-      return false;
+   if (num <= 0 || num === 1) return false;
+   for (var i = 2; i < num; i++) {
+      if (num % i === 0) return false;     
    }
-   else if (num == 2 ){
-      return true;
-   }
-   for (var i = 2; i * i <= num; i++)
-      if (num % i === 0){
-         return false;
-      }
-   return true
-      
+   return true;   
 }
 
 function esVerdadero(valor) {
@@ -211,12 +202,12 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var i = 0;
+   var contador = 0;
 do {
-num += 5 ;
-i++ ;
-} while(i < 8 ){
-return num
+num = num + 5;
+contador++ ;
+} while (contador < 9 ){
+return num;
 }
 
 }

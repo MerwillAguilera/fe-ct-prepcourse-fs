@@ -10,10 +10,9 @@ function esPositivo(num) {
    // Tu código:
    if (num > 0)
       return "Es positivo"
-   if (num < 0)
+   else if (num < 0)
       return "Es negativo"
-   if (num == 0)
-      return false
+   else return false
 }
 
 function agregarSimboloExclamacion(str) {
